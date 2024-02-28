@@ -152,8 +152,8 @@ body {
 	margin-top: calc(var(--index) * -.75);
 }
 .main-article {
-	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -5.5), 0);
-	min-height: 120vh;
+	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -4), 0);
+	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
 	color: var(--text);
@@ -246,18 +246,14 @@ body {
 	letter-spacing: calc(var(--index) / 37.5);
 }
 .copy_button {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	position: fixed;
-	font-family: 'Courier New', Courier, monospace;
-	bottom: calc(var(--index) * 7.5);
-	font-size: calc(var(--index) * 15);
-	letter-spacing: calc(var(--index) / 10.5);
-	will-change: transform;
-	display: inline-block;
+	position: absolute;
+	bottom: calc(var(--index) * 4);
+	font-size: calc(var(--index) * .85);
+	letter-spacing: calc(var(--index) / 37.5);
 	font-weight: 600;
 	line-height: 1.5;
-	color: #ffffff96;
+	opacity: .9;
+	color: #e0f6ff;
 	background-repeat: no-repeat;
 	text-align: center;
 	vertical-align: middle;
@@ -273,7 +269,7 @@ body {
 	transition: all .3s ease-in-out;
 	text-decoration: none;
 	justify-content: space-between;
-
+	font-family: "Gill Sans", sans-serf;i
 }
  /* Google Font Import - Poppins */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -651,7 +647,12 @@ body::-webkit-scrollbar {
     top: 0;
     background: rgba(51, 51, 51, 0.425);
     z-index: 10;
-
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 @media screen and (min-width: 500px) {
 
@@ -920,8 +921,8 @@ html, body{width:100%; height:100%; margin:0}
 
 .popups {
     display: none;
-    top: 100px;
-    left: calc(50% - 350px);
+    margin-top: calc(50% - 52rem);;
+    margin-left: calc(50% - 44rem);
     position: absolute;
     height: 80%;
     z-index: 100;
@@ -944,7 +945,7 @@ html, body{width:100%; height:100%; margin:0}
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
     border-radius: 4px;
 	z-index: 100;
     -webkit-box-shadow: 0 0 20px 10px rgb(0 0 0 / 30%);
@@ -955,7 +956,7 @@ html, body{width:100%; height:100%; margin:0}
 	
 
 .widthPopUp{
-    width: 700px;
+    width: 90rem;
 	z-index: 1000;
 
 }
@@ -976,7 +977,7 @@ html, body{width:100%; height:100%; margin:0}
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 100%;
+    height: 80%;
 }
 
 .Forgot{
@@ -1144,4 +1145,4 @@ img:hover {
 	box-shadow: 0 0 8px #0065b3;
 	transform: scale(1.1); /* увеличение на 20% при наведении на картинку */
 }
-
+ 
